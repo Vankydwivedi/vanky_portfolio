@@ -55,3 +55,10 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
     </nav>
   );
 };
+
+import PropTypes from 'prop-types';
+
+Navbar.propTypes = {
+  menuOpen: PropTypes.bool.isRequired,
+  setMenuOpen: PropTypes.func.isRequired,
+};
