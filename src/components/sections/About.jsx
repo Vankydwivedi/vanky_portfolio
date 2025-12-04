@@ -2,19 +2,21 @@ import { RevealOnScroll } from "../RevealOnScroll";
 
 export const About = () => {
   const frontendSkills = [
-    "HTML/CSS",
-    "React",
-    "TailwindCSS",
-    "TypeScript",
+    "Python",
+    "C++",
+    "SQL",
+    "Pandas",
+    "NumPy",
+    "scikit-learn",
   ];
 
   const backendSkills = [
-    "Node.js",
-    "Express",
-    "MongoDB",
-    "Socket.IO",
-    "Stripe",
-    "JWT",
+    "LangChain & LangGraph",
+    "RAG & Vector Search",
+    "PostgreSQL / MongoDB",
+    "Docker & Kubernetes",
+    "AWS / GCP / Azure",
+    "GitHub Actions (CI/CD)",
   ];
 
   return (
@@ -30,13 +32,15 @@ export const About = () => {
 
           <div className="rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all">
             <p className="text-gray-300 mb-6">
-              Passionate developer with expertise in building scalable web
-              applications and creating innovative solutions.
+              I’m an engineering student passionate about data science and building practical AI systems.  
+              I enjoy turning ideas into working solutions and improving my skills through projects and problem-solving.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              
+              {/* Development Skills */}
               <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
-                <h3 className="text-xl font-bold mb-4">Frontend</h3>
+                <h3 className="text-xl font-bold mb-4">Development Skills</h3>
                 <div className="flex flex-wrap gap-2">
                   {frontendSkills.map((tech, key) => (
                     <span
@@ -50,9 +54,10 @@ export const About = () => {
                 </div>
               </div>
 
+              {/* Backend & Systems (Compact Grid) */}
               <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
-                <h3 className="text-xl font-bold mb-4">Backend</h3>
-                <div className="flex flex-wrap gap-2">
+                <h3 className="text-xl font-bold mb-4">Backend & Systems</h3>
+                <div className="grid grid-cols-2 gap-2">
                   {backendSkills.map((tech, key) => (
                     <span
                       key={key}
@@ -64,10 +69,11 @@ export const About = () => {
                   ))}
                 </div>
               </div>
+
             </div>
           </div>
 
-          {/* Centered Education Section with original size/structure */}
+          {/* Education Section */}
           <div className="flex justify-center mt-8">
             <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all w-full md:w-1/2">
               <h3 className="text-xl font-bold mb-4"> 🏫 Education </h3>
@@ -76,11 +82,12 @@ export const About = () => {
                   <strong>B.Tech in Electronics and Communication Engineering</strong> – IIIT Bhopal (2022–2026)
                 </li>
                 <li>
-                  Relevant Coursework: Data Structures, Web Development, Cloud Computing...
+                  Relevant Coursework: Data Structures, Data Science, Cloud Computing ...
                 </li>
               </ul>
             </div>
           </div>
+
         </div>
       </RevealOnScroll>
     </section>
